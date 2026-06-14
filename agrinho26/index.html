@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroForte | Sustentabilidade no Campo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Agro<span class="destaque">Forte</span></div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#praticas">Práticas Sustentáveis</a></li>
+            <li><a href="#calculadora">Calculadora Orgânica</a></li>
+        </ul>
+    </nav>
+
+    <header id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Produção Saudável, <br> Futuro <span class="verde">Sustentável</span></h1>
+            <p>Vamos equilibrar a produção com o meio ambiente. Menos química, mais natureza.</p>
+            <a href="#praticas" class="btn-main">Começar Agora</a>
+        </div>
+    </header>
+
+    <section id="praticas" class="praticas">
+        <h2>Como produzir sem agricultura intensiva?</h2>
+        <div class="cards-container">
+            <div class="card">
+                <h3>🌱 Rotações de Culturas</h3>
+                <p>Não plante o mesmo milho no mesmo lugar sempre. Mude! Isso renova os nutrientes do solo sem precisar de adubo químico.</p>
+            </div>
+            <div class="card">
+                <h3>♻️ Compostagem</h3>
+                <p>Transforme restos de comida e esterco em ouro negro para a terra. O adubo orgânico é gratuito e rico.</p>
+            </div>
+            <div class="card">
+                <h3>💧 Captação de Água</h3>
+                <p>Use a água da chuva para regar. Além de economizar, você protege as nascentes e mantém o solo úmido naturalmente.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="calculadora" class="calculadora">
+        <div class="calc-box">
+            <h2>🧮 Calculadora de Adubo Orgânico</h2>
+            <p>Quantos metros quadrados (m²) sua horta tem?</p>
+            <div class="calc-group">
+                <input type="number" id="areaHorta" placeholder="Ex: 50" min="1">
+                <button onclick="calcularAdubo()" class="btn-calc">Calcular</button>
+            </div>
+            <div id="resultado" class="hidden"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 AgroForte. Produzindo com amor e consciência.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
